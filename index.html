@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Saed Kasab</title>
+    <link rel="icon" type="img/x-icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Loader -->
+    <div class="loader-container">
+      <div class="loader"></div>
+    </div>
+
+    <!-- Theme Switcher -->
+    <div class="theme-switch" id="themeSwitch">
+      <div class="theme-switch-toggle"></div>
+    </div>
+    <!-- Language Switcher -->
+    <div class="language-switch" id="languageSwitch">
+      <button class="language-btn active" data-lang="en">EN</button>
+      <button class="language-btn" data-lang="sv">SV</button>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <div class="scroll-to-top" id="scrollToTop">
+      <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="profile">
+          <!-- <img
+          
+            src="https://www.dropbox.com/scl/fi/g4qlictm1zn801te0202e/CV8.jpg?rlkey=bcwh1uo43p5scua4hkwaqjve6&st=vkt7959g&raw=1" 
+          alt="Saed Kasab"
+          /> -->
+          <img
+            src="https://raw.githubusercontent.com/Saed-K/website/refs/heads/main/image(1).png?token=GHSAT0AAAAAADAXVQERWJNX47NOEAZK67SIZ63PNTA"
+            alt="Saed Kasab"
+          />
+          <div class="profile-info">
+            <h1 class="typing-animation">Saed Kasab</h1>
+            <p class="title" data-i18n="profileTitle"></p>
+            <div class="contact-info">
+              <a href="tel:+46700330701"
+                ><i class="fas fa-phone"></i> (+46) 0700330701</a
+              >
+              <a href="mailto:saed.kasab13@gmail.com"
+                ><i class="fas fa-envelope"></i> saed.kasab13@gmail.com</a
+              >
+              <a
+                href="https://se.linkedin.com/in/saed-kasab-635b77272"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="https://saed-k.github.io/cv/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i class="fa-solid fa-paperclip"></i>CV
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+      <div class="main">
+        <!-- Sidebar -->
+        <div class="content">
+          <!-- About Me Section -->
+          <div class="section fade-in">
+            <div class="section-title">
+              <i class="fas fa-user"></i>
+              <span data-i18n="aboutMeTitle">About Me</span>
+            </div>
+            <div class="section-content">
+              <p data-i18n="pb"></p>
+              <br />
+              <p
+                style="display: block; text-align: justify"
+                data-i18n="pb1"
+              ></p>
+              <br />
+              <p
+                style="display: block; text-align: justify"
+                data-i18n="pb2"
+              ></p>
+              <br />
+              <p
+                style="display: block; text-align: justify"
+                data-i18n="pb3"
+              ></p>
+              <br />
+              <p
+                style="display: block; text-align: justify"
+                data-i18n="pb4"
+              ></p>
+              <br />
+              <p
+                style="display: block; text-align: justify"
+                data-i18n="pb5"
+              ></p>
+              <br />
+              <p
+                style="display: block; text-align: justify"
+                data-i18n="pb6"
+              ></p>
+              <br />
+              <p data-i18n="pb7"></p>
+              <br />
+              <p data-i18n="pb8"></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content -->
+      </div>
+    </div>
+
+    <!-- Contact Button -->
+    <div class="container-bottom">
+      <div class="contact-button-container">
+        <a
+          id="downloadButton"
+          class="download-button"
+          href="https://www.dropbox.com/scl/fi/a3b5gnwpohhs5usrh2a5r/Personligt-brev-Saed-Kasab-2025.pdf?rlkey=tl11m8djyhpz6yhetnjzil5cs&st=mkn985at&dl=1"
+          target="_blank"
+          rel="noopener noreferrer"
+          ><i class="fa-solid fa-download"></i
+          ><span data-i18n="downButton"></span
+        ></a>
+        <button id="contactButton" class="contact-button">
+          <i class="fas fa-envelope"></i>
+          <span data-i18n="contactTitle">Contact Me</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close-modal" style="cursor: pointer">&times;</span>
+        <h2 class="modal-title">
+          <i class="fas fa-envelope"></i>
+          <span data-i18n="contactTitle">Contact Me</span>
+        </h2>
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              data-i18n-placeholder="namePlaceholder"
+              placeholder="Your Name"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              data-i18n-placeholder="emailPlaceholder"
+              placeholder="Your Email"
+            />
+          </div>
+          <div class="form-group">
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              required
+              data-i18n-placeholder="subjectPlaceholder"
+              placeholder="Subject"
+            />
+          </div>
+          <div class="form-group">
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              required
+              data-i18n-placeholder="messagePlaceholder"
+              placeholder="Your Message"
+            ></textarea>
+          </div>
+          <button type="submit" class="submit-btn" data-i18n="sendButton">
+            Send Message
+          </button>
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+    <!-- Download Button -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="social-links">
+          <a
+            href="https://se.linkedin.com/in/saed-kasab-635b77272"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a
+            href="https://github.com/Saed-K"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            href="#"
+            class="social-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+        <p>&copy; 2025 Saed Kasab. All rights reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
